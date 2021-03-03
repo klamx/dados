@@ -1,7 +1,16 @@
 <div class="container">
-  <div class="row d-flex justify-content-around jumbotron">
-    <img [src]="src1" [ngStyle]="{'background' : equal === 'Ganaste' ? '#28A745' : '#CD2737'}"/>
-    <img [src]="src2" [ngStyle]="{'background' : equal === 'Ganaste' ? '#28A745' : '#CD2737'}"/>
+  <div
+    class="row d-flex justify-content-around jumbotron mt-3"
+    [ngStyle]="{ background: equal === 'Ganaste' ? '#D4EDDA' : '#F8D7DA' }"
+  >
+    <img
+      [src]="src1"
+      [ngStyle]="{ background: equal === 'Ganaste' ? '#28A745' : '#CD2737' }"
+    />
+    <img
+      [src]="src2"
+      [ngStyle]="{ background: equal === 'Ganaste' ? '#28A745' : '#CD2737' }"
+    />
   </div>
   <div class="row">
     <div class="col-4"></div>
@@ -10,5 +19,10 @@
     </div>
     <div class="col-4"></div>
   </div>
-  <p class="alert col-12 text-center h3 m-3" [ngClass]="equal === 'Ganaste' ? 'alert-success' : 'alert-danger'">{{ equal }}</p>
+  <p
+    class="alert col-12 text-center h3 m-0"
+    [ngClass]="equal === 'Ganaste' ? 'alert-success' : 'alert-danger'"
+  >
+    {{ equal }}
+  </p>
 </div>
